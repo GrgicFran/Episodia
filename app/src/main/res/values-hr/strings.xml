@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Episodia</string>
+    <string name="trending">Popularno</string>
+    <string name="results">Rezultati</string>
+    <string name="no_results">Nema rezultata</string>
+    <string name="again">Ponovo</string>
+    <string name="query_hint">Pretraži serije i emisije</string>
+    <string name="not_released">Serija još nije izašla</string>
+    <string name="season">Sezona</string>
+    <string name="episode">Epizoda</string>
+    <string name="open_in_netflix">Pokreni</string>
+    <string name="network">TV mreža</string>
+</resources>

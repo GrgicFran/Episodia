@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Episodia</string>
+    <string name="trending">Trending</string>
+    <string name="results">Results</string>
+    <string name="no_results">No results</string>
+    <string name="lorem_ipsum" translatable="false">Lorem Ipsum</string>
+    <string name="lorem_ipsum_2" translatable="false">Dolor sit amet consectetuer</string>
+    <string name="again">Again</string>
+    <string name="query_hint">Search for any show</string>
+    <string name="not_released">Show not yet released</string>
+    <string name="season">Season</string>
+    <string name="episode">Episode</string>
+    <string name="open_in_netflix">Stream</string>
+    <string name="network">Network</string>
+</resources>

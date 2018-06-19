@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#28536B</color>
+    <color name="colorPrimaryDark">#223843</color>
+    <color name="colorPrimaryLight">#7EA8BE</color>
+    <color name="colorAccent">#D77A61</color>
+    <color name="colorAccentLight">#D8B4A0</color>
+    <color name="netflixRed">#b71c1c</color>
+
+    <color name="trending">#f9a825</color>
+    <color name="randomEpisode">#57a128</color>
+    <color name="white">#f5f5f5</color>
+    <color name="lightGrey">#cccccc</color>
+    <color name="grey">#6e6e6e</color>
+    <color name="darkGrey">#303030</color>
+    <color name="black">#000000</color>
+</resources>

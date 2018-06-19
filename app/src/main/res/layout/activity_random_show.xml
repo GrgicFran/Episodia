@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="40"
+        android:id="@+id/root_container"
+        android:background="@drawable/shadow"
+        android:elevation="6dp"
+        android:layout_margin="12dp"
+        tools:context=".RandomShow">
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/spinner"
+            style="@style/SpinKitView.Small.DoubleBounce"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:padding="20dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            app:SpinKit_Color="@color/colorAccent" />
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/main_container">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:id="@+id/show_title"
+                    android:text="Game of Thrones"
+                    android:textSize="35sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_margin="@dimen/margin_large"
+                    />
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/poster"
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/ic_launcher"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:layout_marginBottom="@dimen/margin_medium"
+                    android:layout_marginRight="@dimen/margin_huge"
+                    android:layout_marginLeft="@dimen/margin_huge"
+                    app:riv_corner_radius="12dp"
+                    android:layout_below="@id/show_title"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:id="@+id/episode_name"
+                    android:text="The Winds of Winter"
+                    android:layout_centerVertical="true"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_below="@id/poster"
+                    android:layout_marginLeft="@dimen/margin_large"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:id="@+id/episode_number"
+                    android:text="Seson 1, Episode 4"
+                    android:textSize="15sp"
+                    android:layout_below="@id/episode_name"
+                    android:layout_marginLeft="@dimen/margin_large"
+                    android:layout_marginRight="@dimen/margin_medium"
+                    android:layout_marginBottom="5dp"
+                    />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/episode_summary_scrollview"
+                    android:layout_below="@id/episode_number"
+                    android:layout_marginLeft="@dimen/margin_large"
+                    android:layout_marginRight="@dimen/margin_medium">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:id="@+id/episode_summary"
+                        android:text="This is when blah kills blah"
+                        android:textSize="11sp"/>
+
+                </ScrollView>
+
+
+                <RelativeLayout
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/try_again_button"
+                    android:background="@drawable/button_primary"
+                    android:layout_below="@id/episode_summary_scrollview"
+                    android:elevation="6dp"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:layout_marginBottom="@dimen/margin_medium"
+                    android:layout_centerHorizontal="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/try_again_text"
+                        android:text="@string/again"
+                        android:layout_centerInParent="true"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/netflix_button"
+                    android:background="@drawable/button_netflix"
+                    android:layout_below="@id/try_again_button"
+                    android:elevation="6dp"
+                    android:layout_marginBottom="@dimen/margin_medium"
+                    android:layout_centerHorizontal="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/netflix"
+                        android:text="@string/open_in_netflix"
+                        android:layout_centerInParent="true"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold"/>
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textColor="@color/lightGrey"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:layout_marginRight="@dimen/margin_medium"
+        android:textSize="11sp"
+        android:gravity="right"
+        android:text="Shows provided by tvmaze.com and episodate.com"/>
+
+</LinearLayout>
